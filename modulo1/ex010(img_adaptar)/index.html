@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem, audio e video</title>
+</head>
+<body>
+    <h1>Imagens flexiveis</h1>
+    <p>aumente e diminua o tamanho da tela</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="imagem adaptavel">
+    </picture>
+
+    <h1>Audio</h1>
+    <!-- <audio src="audios/happy-mistake.mp3" controls autoplay loop></audio> tocar audio automatico use autoplay -->
+
+    <audio preload="metadata" controls>
+        <source src="audios/happy-mistake.mp3" type="audio/mpeg"> <!--mp3-->
+        <source src="audios/happy-mistake.ogg" type="audio/ogg"> <!--ogg-->
+        <source src="audios/happy-mistake.wav" type="audio/wav"> <!--wav esse é muito pessado -->
+    </audio>
+
+    <h1>video</h1>
+
+    <!-- <video src="img/meu-video.mp4" width="500" controls></video> -->
+
+    <video controls width="500" poster="img/limoes-capa.png">
+        <source src="img/meu-video.mp4" type="video/mp4">
+        <source src="img/meu-video.m4v" type="video/m4v">
+        <source src="img/meu-video.webm" type="video/webm">
+        <source src="img/meu-video.ogv" type="video/ogv">
+        <p>navegador não é compativel com video</p>
+    </video>
+
+    <h1>video por link</h1>
+    <iframe width="500" height="439" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="Incorporação de vídeos externos - @Curso em Vídeo HTML5 e CSS3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
