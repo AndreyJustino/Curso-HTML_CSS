@@ -1,0 +1,15 @@
+height = altura
+width = largura
+
+border = borda; linha que "circula" a caixa do conteudo
+padding = preenchimento; seria "engordar" o espaço entre "border" e a "caixa de conteudo"
+
+margin = margem; imagina que tem duas caixas com o "border" e voce quer dar um espaço entre elas. O espaço que
+       tiver sera o "margin"
+
+outline = contorno; é tipo um "border" só que fica por fora, lado externo do elemento 
+            (fora do elemento e dentro do margin)
+
+box-level = é uma caixa que sempre vai se iniciar em uma nova linha
+
+inline-level = é uma caixa que sempre vai se iniciar na mesma linha que outra caixa

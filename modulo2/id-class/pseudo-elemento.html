@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: darkred;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: rgb(0, 255, 13);
+        }
+
+        .especial::after{
+            content: ' <---';
+        }
+
+        .especial::before{
+            content: '---> ';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com" target="_blank">git</a></li>
+        <li><a href="https://linkedin.com" class="especial" target="_blank">linkedin</a></li>
+        <li><a href="https://instagram.com" target="_blank">instagram</a></li>
+    </ul>
+</body>
+</html>
