@@ -120,6 +120,10 @@ section h3 {
   gap: 100px;
 }
 
+abbr{
+  text-decoration: none;
+}
+
 .div-imagem {
   display: flex;
   justify-content: center;
