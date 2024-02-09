@@ -1,0 +1,24 @@
+:root{
+    --fontP: Arial;
+    --fontT: Verdana;
+    --fontF: Tahoma;
+
+    --cor0: red;
+    --cor1: blue;
+    --cor2: green;
+}
+
+header{
+    background-color: var(--cor0);
+    font-family: var(--fontT);
+}
+
+main{
+    background-color: var(--cor1);
+    font-family: var(--fontP);
+}
+
+footer{
+    background-color: var(--cor2);
+    font-family: var(--fontT);
+}
