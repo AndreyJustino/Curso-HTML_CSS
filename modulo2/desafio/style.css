@@ -118,6 +118,8 @@ section h3 {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 100px;
+  list-style-type: "\2714\00A0";
+  list-style-position: inside;
 }
 
 abbr{
