@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            padding: 10px;
+            font-weight: bolder;
+        }
+        th, td{
+            border: 1px solid #000000;
+            padding: 10px;
+        }
+        .cDestaque{
+            background-color: #ffff00;
+        }
+        .cGroup{
+            background-color: #00ff00;
+        }
+        .cIdade{
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cGroup" span="2">
+            <col class="cIdade">
+            <col class="cDestaque">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Leticia</td>
+            <td>F</td>
+            <td>27</td>
+            <td>Professora</td>
+        </tr>
+    </table>
+</body>
+</html>
