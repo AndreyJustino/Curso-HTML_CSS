@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Primeira Pagina</h1>
+    <ul>
+        <li><a href="paginasIframe/pagina1.html" target="frame">Ir para pagina 1</a></li>
+        <li><a href="paginasIframe/pagina2.html" target="frame">Ir para pagina 2</a></li>
+        <li><a href="paginasIframe/pagina3.html" target="frame">Ir para pagina 3</a></li>
+        <li><a href="../../modulo3/tabela/tabela06.html" target="frame">Tabela</a></li>
+    </ul>
+    <iframe srcdoc="<h1>Escolha uma pagina</h1>" frameborder="1" name="frame" width="600" height="300">
+        <p>Seu navegador não é compativel</p>
+    </iframe>
+    <!-- o name do iframe é o msm que esta no target do <a></a> 
+     isso para que o link seja aberto no iframe -->
+</body>
+</html>
