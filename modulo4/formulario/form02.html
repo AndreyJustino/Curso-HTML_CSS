@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Notas</h1>
+    <form action="post">
+        <fieldset>
+            <legend>Dados de formulario</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Digite seu nome"
+                maxlength="30" pattern="^[a-zA-Z\s]+"  title="Apenas letras!">
+                <!-- maxlength e minlenght só para letras -->
+            </p>
+            <p>
+                <label for="nota">Nota:</label>
+                <input type="number" name="nota" id="nota" step="0.1" required placeholder="coloque sua nota"
+                min="0" max="10">
+                <!-- min e max só se for numero -->
+            </p>
+            <p>
+                <label for="cpf">cpf:</label>
+                <input type="text" name="cpf" id="cpf" required placeholder="coloque seu cpf"
+                pattern="^\d{3}.\d{3}.\d{3}-\d{2}$" title="000.000.000-00">
+                <!-- min e max só se for numero -->
+            </p>
+            <p>
+                <label for="data">Data</label>
+                <input type="data" name="data" id="data" required
+                pattern="^\d{2}/\d{2}/\d{4}$" title="00/00/0000">
+            </p>
+            <p>
+                <label for="mes">Mês</label>
+                <input type="month" name="mes" id="mes">
+            </p>
+            <p>
+                <label for="hora">hora</label>
+                <input type="time" name="hora" id="hora">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

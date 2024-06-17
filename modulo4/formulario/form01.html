@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="app.js" method="post" autocomplete="off">
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required size="15"
+            minlength="10" maxlength="30" placeholder="Seu e-mail" autocomplete="email">
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required size="10"
+            minlength="8" maxlength="20" placeholder="Sua senha" autocomplete="new-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
