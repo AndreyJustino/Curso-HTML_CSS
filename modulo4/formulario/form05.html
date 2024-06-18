@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="main.js" method="post">
+        <label for="estado">Estados:</label>
+
+        <select name="estado" id="estado" selected>
+            <option value="" > --- Escolha ---</option>
+            
+            <optgroup label="Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="ES">Espirito Santo</option>
+            </optgroup>
+            <!-- optgroup possibilidade de separa as opçoes em grupo  -->
+            <optgroup label="Nordeste">
+                <option value="CE">Ceara</option>
+                <option value="BH">Bahia</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <label for="profi">Profissão</label>
+        <input type="text" name="profi" id="profi" list="lisProf">
+        <datalist id="lisProf">
+            <option>Desenvolvedor</option>
+            <option>Medico</option>
+            <option>Militar</option>
+        </datalist>
+        <br><br>
+
+        <label for="desc">Descrição</label><br>
+        <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+        
+        <br><br>
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

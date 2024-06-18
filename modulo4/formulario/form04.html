@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="main.js" method="post">
+
+        <fieldset>
+            <legend>Esporte favoritos</legend>
+            <ul type="none">
+                <li><input type="checkbox" name="fut" id="fut"><label for="fut">Futebol</label></li>
+                <li><input type="checkbox" name="basq" id="basq"><label for="basq">Basquete</label></li>
+                <li><input type="checkbox" name="volei" id="volei"><label for="volei">Volei</label></li>
+                <li><input type="checkbox" name="tenis" id="tenis"><label for="tenis">Tenis</label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" value="M"><label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
+            <!-- radio dever ter o mesmo name para que se um for marcado o outro seja desmarcado -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Restante</legend>
+            <p>
+                <label for="cor">Cor: </label>
+                <input type="color" name="cor" id="cor" value="#00ff00">
+            </p>
+
+            <p>
+                <label for="avaliacao">Avaliacao</label>
+                <input type="range" name="avaliacao" id="avaliacao" min="1" max="5" value="3">
+            </p>
+
+            <p>
+                <label for="arquivo">Arquivo</label>
+                <input type="file" name="arquivo" id="arquivo">
+                <!-- para usar o tipo file o metodo usado no form deve ser post -->
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
