@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label for="n1">Numero:</label>
+            <input type="number" name="n1" id="n1" placeholder="Digite um numero" required min="0" max="100" 
+            oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+        </p>
+        <p>
+            <label for="n2">Numero:</label>
+            <input type="number" name="n2" id="n2" placeholder="Digite um numero" required min="0" max="100"
+            oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+        </p>
+        <p>
+            <label for="soma">Resultado de soma: </label>
+            <output name="soma" id="soma">0</output>
+        </p>
+
+        <p>
+            <input type="range" name="n3" id="n3" oninput="numero.innerHTML = Number(n3.value)">
+            <output name="numero" id="numero">50</output>
+        </p>
+
+        <p>
+            <label for="ano">Ano de nascimento</label>
+            
+            <input type="range" name="ano" id="ano" min="1900" max="2024"
+            oninput="idade.innerHTML = calcIdade(Number(ano.value)); 
+            valorAno.innerHTML = Number(ano.value)">
+            
+            <output id="valorAno"></output>
+        </p>
+
+        <p>
+            <label for="idade">Idade que você tem: </label>
+            <output id="idade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        const calcIdade = (ano) => {
+            const anoAtual = new Date().getFullYear()
+            return anoAtual - ano
+        }
+    </script>
+</body>
+</html>
