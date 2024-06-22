@@ -6,13 +6,9 @@
     #icon-menu{
         display: none;
     }
+    
     li{
         display: inline-block;
     }
 }
 
-@media screen and (max-width: 767px){
-    #menu1{
-        display: none;
-    }
-}
