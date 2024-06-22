@@ -2,12 +2,7 @@
     article{
         width: 760px;
     }
-    #menu1{
-        display: none;
-    }
-    #menu2{
-        display: block;
-    }
+    
     #icon-menu{
         display: none;
     }
@@ -17,7 +12,7 @@
 }
 
 @media screen and (max-width: 767px){
-    #menu1, #menu2{
+    #menu1{
         display: none;
     }
 }
