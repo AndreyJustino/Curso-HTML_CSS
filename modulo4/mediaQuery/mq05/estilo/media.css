@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px){
+    article{
+        width: 760px;
+    }
+    #menu1{
+        display: none;
+    }
+    #menu2{
+        display: block;
+    }
+    #icon-menu{
+        display: none;
+    }
+    li{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 767px){
+    #menu1, #menu2{
+        display: none;
+    }
+}
