@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: red;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* justify-content: space-around; */
+            align-items: stretch;
+            /* align-content: center; */
+            /* width: 920px; */
+            height: 920px;
+            /* flex-grow: 0; */ /*decidir qual elemento vai ocupar mais espaço*/
+            /* flex-shrink: 0; */
+            
+        }
+        .item{
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+            /* flex-grow: 1; */
+            width: 200px;
+            /* height: 200px; */
+            /* flex: auto; */
+            flex-shrink: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <!-- <div class="item">E</div> -->
+    </div>
+</body>
+</html>
